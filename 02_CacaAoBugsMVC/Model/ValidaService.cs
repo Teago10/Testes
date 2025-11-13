@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace _02_CacaAoBugsMVC.Model
 {
-    class ValidaService
+    public class ValidaService
     {
         /*
            padrão:
@@ -48,15 +48,17 @@ namespace _02_CacaAoBugsMVC.Model
             if (string.IsNullOrEmpty(notaEntrada)) return false;
 
             var notaDecimalVirgula = notaEntrada.Trim().Replace(",",".");
+
             if(!Regex.IsMatch(notaDecimalVirgula, padraoNota)) return false;
-            if (double.TryParse(notaDecimalVirgula, System.Globalization.NumberStyles.Number, System.Globalization.CultureInfo.InvariantCulture, out nota))
+
+            if (!double.TryParse(notaDecimalVirgula, System.Globalization.NumberStyles.Number, System.Globalization.CultureInfo.InvariantCulture, out nota))
             {
-                if (nota = 0 || nota > 10)
+                if (nota == 0 || nota > 10)
                     return false;
                 else
                     return true;
             }
-            return true;
+            return false;
         }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _02_CacaAoBugsMVC.Model
 {
-    class AlunoService
+    public class AlunoService
     {
         public double CalcularMedia(double n1, double n2, double n3)
         {
