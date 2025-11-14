@@ -10,7 +10,7 @@ namespace _02_CacaAoBugsMVC.Model
     {
         public double CalcularMedia(double n1, double n2, double n3)
         {
-            return (n1 + n2 + n3) / 3;
+            return Math.Round((n1 + n2 + n3) / 3,2);
         }
         public string ObterSituacao(double media)
         {

@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35931.197 d17.13
+VisualStudioVersion = 17.13.35931.197
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_CacaAoBugsMVC", "02_CacaAoBugsMVC.csproj", "{E03842B6-E987-49C1-BA41-88A93ED7D478}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_CacaAoBugsMVC.Test", "..\02_CacaAoBugsMVC.Test\02_CacaAoBugsMVC.Test.csproj", "{3D23C9D9-4B2D-43CE-A578-4DFC4E25E890}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{E03842B6-E987-49C1-BA41-88A93ED7D478}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E03842B6-E987-49C1-BA41-88A93ED7D478}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E03842B6-E987-49C1-BA41-88A93ED7D478}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D23C9D9-4B2D-43CE-A578-4DFC4E25E890}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D23C9D9-4B2D-43CE-A578-4DFC4E25E890}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D23C9D9-4B2D-43CE-A578-4DFC4E25E890}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D23C9D9-4B2D-43CE-A578-4DFC4E25E890}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

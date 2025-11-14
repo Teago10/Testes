@@ -1,0 +1,11 @@
+﻿namespace _02_CacaAoBugsMVC.Test
+{
+    [TestClass]
+    public sealed class Test1
+    {
+        [TestMethod]
+        public void TestMethod1()
+        {
+        }
+    }
+}
