@@ -51,7 +51,7 @@ namespace _02_CacaAoBugsMVC.Model
 
             if(!Regex.IsMatch(notaDecimalVirgula, padraoNota)) return false;
 
-            if (!double.TryParse(notaDecimalVirgula, System.Globalization.NumberStyles.Number, System.Globalization.CultureInfo.InvariantCulture, out nota))
+            if (double.TryParse(notaDecimalVirgula, System.Globalization.NumberStyles.Number, System.Globalization.CultureInfo.InvariantCulture, out nota))
             {
                 if (nota == 0 || nota > 10)
                     return false;

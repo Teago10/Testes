@@ -39,10 +39,10 @@ namespace _02_CacaAoBugsMVC.Controller
         // => expressão Lambda
         public IReadOnlyList<Aluno> ObterAlunos() => alunos.AsReadOnly();
         
-        public double ObterTAxaAprovacao()
+        public double ObterTaxaAprovacao()
         {
             int totalAlunos = alunos.Count;
-            int totalAprovados = alunos.FindAll(a => a.Situacao == "APROVADO").Count;
+            int totalAprovados = alunos.FindAll(a => a.Situacao == "Aprovado").Count;
             return _alunoService.CalcularTaxaAprovacao(totalAlunos, totalAprovados);
         }
         
